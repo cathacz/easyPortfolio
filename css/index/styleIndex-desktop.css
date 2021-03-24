@@ -10,4 +10,14 @@
   padding: 0;
   font-size: 16px;
   font-family: "Roboto";
+  background-color: slategrey;
+}
+main {
+  border: seagreen 2px dashed;
+}
+.about {
+  border: seagreen 2px dashed;
+  background-color: salmon;
+  width: 100vw;
+  height: 100vw;
 }
