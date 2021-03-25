@@ -9,16 +9,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 10pt;
   font-family: "Work Sans", sans-serif;
 }
 main {
-  width: 50vw;
-  margin: 35vh auto;
+  width: 30vw;
+  margin: 20vh auto;
+
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  /* border: seagreen 2px dashed; */
+  justify-content: space-between;
+  border: seagreen 2px dashed;
 }
 main div {
   /* border: seagreen 2px dashed; */
@@ -30,7 +31,7 @@ main div {
   justify-content: center;
 }
 /* triangle */
-main div:hover {
+/* main div:hover {
   border-left: 3.5vw solid transparent;
   border-right: 3.5vw solid transparent;
   border-top: 7vw solid #1e1f21;
@@ -40,11 +41,15 @@ main div:hover {
   align-items: center;
   justify-content: center;
 }
+main div:hover p {
+  display: none;
+} */
+
 main div:active {
   background-color: tomato;
 }
 
-/* maybe play later with that... */
+/* ===== maybe play later with that... ===== */
 /* main div:hover {
   position: relative;
   text-align: center;
@@ -53,35 +58,46 @@ main div:active {
   height: 3.5vw;
   width: 7vw;
 }
-main div:hover + div:before {
+main div:hover div:before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 51%;
-  background: red;
+  position: flex;
+
+  height: 3.5vw;
+  width: 3.5vw;
+  background: #1e1f21;
   transform: skew(0deg, 6deg);
 }
-main div:hover + div:after {
+main div:hover div:after {
   content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background: red;
+  position: flex;
+
+  height: 3.5vw;
+  width: 3.5vw;
+  background: #1e1f21;
   transform: skew(0deg, -6deg);
 } */
-
-.about {
+/* .cross {
+  display: none;
+} */
+/* main div:hover,
+.cross {
+  background: #1e1f21;
+  height: 7vw;
+  position: relative;
+  width: 1.4vw;
 }
-.projects {
-}
-.contact {
-}
+main div:hover,
+.cross:after {
+  background: #1e1f21;
+  content: "";
+  height: 1.4vw;
+  left: -2.8vw;
+  position: absolute;
+  top: 2.8vw;
+  width: 7vw;
+} */
 p {
   color: azure;
   font-family: "Work Sans";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
