@@ -23,12 +23,57 @@ main {
 main div {
   /* border: seagreen 2px dashed; */
   background-color: #1e1f21;
-  width: 7.5vw;
-  height: 7.5vw;
+  width: 7vw;
+  height: 7vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+/* triangle */
+main div:hover {
+  border-left: 3.5vw solid transparent;
+  border-right: 3.5vw solid transparent;
+  border-top: 7vw solid #1e1f21;
+  background-color: transparent;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main div:active {
+  background-color: tomato;
+}
+
+/* maybe play later with that... */
+/* main div:hover {
+  position: relative;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 6px;
+  height: 3.5vw;
+  width: 7vw;
+}
+main div:hover + div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 51%;
+  background: red;
+  transform: skew(0deg, 6deg);
+}
+main div:hover + div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: red;
+  transform: skew(0deg, -6deg);
+} */
+
 .about {
 }
 .projects {
