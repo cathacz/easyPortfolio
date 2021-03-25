@@ -19,9 +19,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: seagreen 2px dashed; */
+  border: seagreen 2px dashed;
 }
-
+/* 
 main div {
   background-color: #1e1f21;
   width: 7vw;
@@ -29,7 +29,7 @@ main div {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* triangle */
 /* main div:hover {
@@ -41,10 +41,10 @@ main div {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+}*/
 main div:hover p {
   display: none;
-} */
+}
 
 main div:active {
   background-color: tomato;
@@ -81,6 +81,7 @@ main div:hover div:after {
 main div:hover {
   animation-name: cross;
   animation-duration: 2s;
+  cursor: pointer;
 }
 @keyframes cross {
   from {
@@ -92,25 +93,34 @@ to {
 }
 .cross {
   opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7vw;
+  height: 7vw;
+  border: 2px salmon dashed;
 }
-*/ .cross {
+.cross .horizontal {
   background: #1e1f21;
   height: 7vw;
   position: relative;
   width: 1.4vw;
 }
 
-.cross:after {
+.cross .vertical {
   background: #1e1f21;
   content: "";
   height: 1.4vw;
-  left: -2.8vw;
   position: absolute;
-  top: 2.8vw;
+  /* left: -2.8vw; */
+  /* top: 2.8vw; */
   width: 7vw;
 }
 
 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: azure;
   font-family: "Work Sans";
   font-size: 1.2rem;
