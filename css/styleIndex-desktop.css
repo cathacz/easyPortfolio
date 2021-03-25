@@ -21,7 +21,7 @@ main {
   justify-content: space-between;
   border: seagreen 2px dashed;
 }
-/* 
+
 main div {
   background-color: #1e1f21;
   width: 7vw;
@@ -29,7 +29,7 @@ main div {
   display: flex;
   align-items: center;
   justify-content: center;
-} */
+}
 
 /* triangle */
 /* main div:hover {
