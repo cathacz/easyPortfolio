@@ -12,116 +12,127 @@
   font-size: 10pt;
   font-family: "Work Sans", sans-serif;
 }
-main {
-  width: 30vw;
-  margin: 20vh auto;
-
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  flex-direction: row;
+  width: 45vw;
+}
+nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: seagreen 2px dashed;
+  list-style: none;
+  margin-top: 5vh;
 }
-
-main div {
-  background-color: #1e1f21;
+nav ul li {
   width: 7vw;
   height: 7vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* triangle */
-/* main div:hover {
+nav ul li a {
+  text-decoration: none;
+  font-family: "Work Sans";
+  color: #1e1f21;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+nav ul li:hover {
   border-left: 3.5vw solid transparent;
   border-right: 3.5vw solid transparent;
   border-top: 7vw solid #1e1f21;
   background-color: transparent;
-  transition: 0.4s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}*/
-main div:hover p {
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+  /* bottom: -3rem; */
+  transform: scale(0.5);
+}
+
+nav ul li:hover a {
   display: none;
 }
-
-main div:active {
-  background-color: tomato;
-}
-
-/* ===== maybe play later with that... ===== */
-/* main div:hover {
-  position: relative;
-  text-align: center;
-  padding: 12px;
-  margin-bottom: 6px;
-  height: 3.5vw;
-  width: 7vw;
-}
-main div:hover div:before {
-  content: "";
-  position: flex;
-
-  height: 3.5vw;
-  width: 3.5vw;
-  background: #1e1f21;
-  transform: skew(0deg, 6deg);
-}
-main div:hover div:after {
-  content: "";
-  position: flex;
-
-  height: 3.5vw;
-  width: 3.5vw;
-  background: #1e1f21;
-  transform: skew(0deg, -6deg);
-} */
-
-main div:hover {
-  animation-name: cross;
-  animation-duration: 2s;
-  cursor: pointer;
-}
-@keyframes cross {
-  from {
-    opacity: 1;
-  }
-}
-to {
-  opacity: 0;
-}
-.cross {
-  opacity: 0;
+main {
+  width: 45vw;
+  margin: 20vh auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 7vw;
-  height: 7vw;
-  border: 2px salmon dashed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: seagreen 2px dashed; */
 }
-.cross .horizontal {
-  background: #1e1f21;
-  height: 7vw;
-  position: relative;
-  width: 1.4vw;
-}
-
-.cross .vertical {
-  background: #1e1f21;
-  content: "";
-  height: 1.4vw;
-  position: absolute;
-  /* left: -2.8vw; */
-  /* top: 2.8vw; */
-  width: 7vw;
+h1 {
+  text-transform: uppercase;
+  font-family: "Work Sans";
+  font-weight: 700;
+  padding-bottom: 1rem;
 }
 
 p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: azure;
   font-family: "Work Sans";
-  font-size: 1.2rem;
+}
+#about {
+  display: none;
+}
+
+#projects {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45vw;
+}
+#projects h1 {
+  display: flex;
+  flex-direction: column;
+}
+#projects div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+#projects img {
+  width: 26vw;
+  margin-right: 2rem;
+}
+.column {
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+button {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: fit-content;
+  padding: 0.5rem;
+  border: none;
+  background-color: white;
+}
+button a {
+  text-decoration: none;
+  font-family: "Work Sans";
+  color: #1e1f21;
+}
+button:hover {
+  background-color: #1e1f21;
+  padding: 0.5rem;
+  transition: 0.3s;
+}
+button:hover a {
+  color: whitesmoke;
+}
+
+a {
+  font-family: "Work Sans";
+  color: #1e1f21;
+}
+#contact {
+  display: none;
 }

@@ -29,27 +29,136 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li onclick="showAbout()" class="about">
+            <a href="#about">About</a>
+          </li>
+          <li onclick="showProjects()"><a href="#projects">Projects</a></li>
+          <li onclick="showContact()"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <div class="about">
-        <div class="cross">
-          <div class="horizontal"></div>
-          <div class="vertical"><p>About</p></div>
+      <div id="about">
+        <h1>All About me</h1>
+        <p>
+          Personal Stuff, no one is really reading, because everybody is
+          brutally self absorbed OR "write something smart and interesting here
+          later". here some lorem: Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Sed consequuntur eius culpa. Architecto, ex debitis.
+          Inventore quos unde totam neque. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Atque suscipit in magni dolorem, enim,
+          deleniti distinctio porro tempore ipsam debitis recusandae totam
+          vitae. Libero, iusto.
+        </p>
+      </div>
+
+      <div id="projects">
+        <h1>Here are some Projects</h1>
+        <div>
+          <a href="https://github.com/cathacz" target="blank"
+            ><img
+              src="https://picsum.photos/id/1081/500/300"
+              alt="project pic aka screenshot"
+          /></a>
+          <div class="column">
+            <p>
+              Super interesting description of what the project is all about
+            </p>
+            <button>
+              <a href="https://github.com/cathacz" target="blank"
+                >Check it out!</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <a href="https://github.com/cathacz" target="blank"
+            ><img
+              src="https://picsum.photos/id/101/500/300"
+              alt="project pic aka screenshot"
+          /></a>
+          <div class="column">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              exercitationem ut odio quia autem suscipit delectus? Dolorum,
+              quia! Incidunt quis tempore quam vitae, ullam in.
+            </p>
+            <button>
+              <a href="https://github.com/cathacz" target="blank"
+                >Check it out!</a
+              >
+            </button>
+          </div>
+        </div>
+        <div>
+          <a href="https://github.com/cathacz" target="blank"
+            ><img
+              src="https://picsum.photos/id/1076/500/300"
+              alt="project pic aka screenshot"
+          /></a>
+          <div class="column">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              quas voluptate maiores animi aliquam eius fuga sit est.
+            </p>
+
+            <button>
+              <a href="https://github.com/cathacz" target="blank"
+                >Check it out!</a
+              >
+            </button>
+          </div>
+        </div>
+        <div>
+          <p>
+            Find more projects
+            <a href="https://github.com/cathacz" target="blank"> here</a>
+          </p>
         </div>
       </div>
-      <div class="projects">
-        <div class="cross">
-          <div class="horizontal"></div>
-          <div class="vertical"><p>Projects</p></div>
-        </div>
-      </div>
-      <div class="contact">
-        <div class="cross">
-          <div class="horizontal"></div>
-          <div class="vertical"><p>Contact</p></div>
-        </div>
+
+      <div id="contact">
+        <h1>Contact me</h1>
+        <p>
+          Feel free t write me something nice in an
+          <a href="mailto:oesigoesoss@gmail.com">email</a>
+        </p>
+        <p>OR</p>
+        <p>checkout my <a href="https://github.com/cathacz">github</a></p>
+        <p>OR</p>
+        <p>
+          browse through some
+          <a href="https://oesigoesossi.wixsite.com/catha">artsy stuff</a>
+        </p>
       </div>
     </main>
     <footer></footer>
+    <script>
+      const showAbout = () => {
+        if (about.style.display == "none") {
+          about.style.display = "block";
+        } else {
+          about.style.display = "none";
+        }
+      };
+      const showProjects = () => {
+        if (projects.style.display == "none") {
+          projects.style.display = "block";
+        } else {
+          projects.style.display = "none";
+        }
+      };
+      const showContact = () => {
+        if (contact.style.display == "none") {
+          contact.style.display = "block";
+        } else {
+          contact.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
