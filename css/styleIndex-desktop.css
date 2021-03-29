@@ -21,7 +21,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: -webkit- sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
 }
+
 nav {
   flex-direction: row;
   width: 45vw;
@@ -31,7 +38,6 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  margin-top: 5vh;
 }
 nav ul li {
   width: 7vw;
@@ -85,7 +91,15 @@ h1 {
   padding-bottom: 1rem;
   font-size: 1.6rem;
 }
-
+h2 {
+  text-transform: uppercase;
+  font-family: "Work Sans";
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  text-indent: 1rem;
+}
 p {
   font-family: "Work Sans";
 }
@@ -146,4 +160,27 @@ a {
 }
 #contact {
   display: none;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.beatingHeart a {
+  text-decoration: none;
+}
+.beatingHeart {
+  animation: beatingHeart 1s infinite;
+}
+@keyframes beatingHeart {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.5);
+  }
 }

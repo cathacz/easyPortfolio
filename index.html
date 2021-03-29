@@ -141,7 +141,12 @@
         </p>
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Made with</p>
+      <p class="beatingHeart">
+        <a href="../portfolio/html/impressum.html">♥</a>
+      </p>
+    </footer>
     <script>
       const showAbout = () => {
         if (about.style.display == "none") {
@@ -157,6 +162,7 @@
           projects.style.display = "block";
           about.style.display = "none";
           contact.style.display = "none";
+          footer.style.display = "flex";
         } else {
           projects.style.display = "none";
         }
