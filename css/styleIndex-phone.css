@@ -1,8 +1,6 @@
 @font-face {
   font-family: "Work Sans";
   src: url("../fonts/WorkSans-Light.ttf");
-  /* src: url("../../fonts/Roboto-Medium.ttf");
-  src: url("../../fonts/Roboto-Regular.ttf"); */
 }
 
 * {
@@ -101,6 +99,7 @@ h2 {
 }
 p {
   font-family: "Work Sans";
+  line-height: 1.4;
 }
 /* #about {
   display: none;
