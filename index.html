@@ -32,7 +32,7 @@
     <header>
       <nav>
         <ul>
-          <li onclick="showAbout()" class="about">
+          <li onclick="showAbout()">
             <a href="#about">About</a>
           </li>
           <li onclick="showProjects()"><a href="#projects">Projects</a></li>
@@ -128,11 +128,16 @@
           <a href="mailto:oesigoesoss@gmail.com">email</a>
         </p>
         <p>OR</p>
-        <p>checkout my <a href="https://github.com/cathacz">github</a></p>
+        <p>
+          checkout my
+          <a href="https://github.com/cathacz" target="blank">github</a>
+        </p>
         <p>OR</p>
         <p>
-          browse through some
-          <a href="https://oesigoesossi.wixsite.com/catha">artsy stuff</a>
+          browse through some of my
+          <a href="https://oesigoesossi.wixsite.com/catha" target="blank"
+            >artsy stuff</a
+          >
         </p>
       </div>
     </main>
@@ -141,6 +146,8 @@
       const showAbout = () => {
         if (about.style.display == "none") {
           about.style.display = "block";
+          projects.style.display = "none";
+          contact.style.display = "none";
         } else {
           about.style.display = "none";
         }
@@ -148,6 +155,9 @@
       const showProjects = () => {
         if (projects.style.display == "none") {
           projects.style.display = "block";
+          about.style.display = "none";
+          contact.style.display = "none";
+          navAbout.style.display = "none";
         } else {
           projects.style.display = "none";
         }
@@ -155,6 +165,8 @@
       const showContact = () => {
         if (contact.style.display == "none") {
           contact.style.display = "block";
+          about.style.display = "none";
+          projects.style.display = "none";
         } else {
           contact.style.display = "none";
         }

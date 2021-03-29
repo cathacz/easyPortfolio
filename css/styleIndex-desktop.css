@@ -47,7 +47,7 @@ nav ul li:hover {
   border-right: 3.5vw solid transparent;
   border-top: 7vw solid #1e1f21;
   background-color: transparent;
-  transition: 0.2s;
+  transition: 0.25s;
   cursor: pointer;
   position: relative;
   /* bottom: -3rem; */
@@ -57,6 +57,11 @@ nav ul li:hover {
 nav ul li:hover a {
   display: none;
 }
+.navAbout {
+  display: flex;
+}
+
+/* ===== main part ===== */
 main {
   width: 45vw;
   margin: 20vh auto;
